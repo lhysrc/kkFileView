@@ -44,7 +44,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build Docker image
-      run: docker build -t ghcr.io/kkfileview:latest .
+      run: docker build -t ghcr.io/lhysrc/kkfileview:latest .
 
     - name: Push Docker image
-      run: docker push ghcr.io/kkfileview:latest
+      run: docker push ghcr.io/lhysrc/kkfileview:latest
